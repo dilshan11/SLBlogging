@@ -11,9 +11,15 @@ export class BlogService {
   constructor(private http:HttpClient) {
     
    }
-  getpost(){
-    return this.http.get<Post[]>('https://techwire.lk/wp-json/wp/v2/posts');
+  getpost_Techwire(){
+    return this.http.get<Post[]>('https://techwire.lk/wp-json/wp/v2/posts?_embed');
   }
-     
+  getpost_Techguru(){
+    return this.http.get<Post[]>('http://techguru.lk/wp-json/wp/v2/posts?_embed');
+  }
+  getpost_Readhub(){
+    return this.http.get<Post[]>('https://readhub.lk/wp-json/wp/v2/posts?_embed');
+  }
+  
   
 }
