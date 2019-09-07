@@ -1,0 +1,40 @@
+.fslideimg{
+    height: 400px;
+    object-fit: cover;
+    max-width: 100%;
+}
+.sslideimg{
+    height: 200px;
+    object-fit: cover;
+    max-width: 100%;
+}
+.tslideimg{
+    height: 200px;
+    object-fit: cover;
+    max-width: 100%;
+}
+.seconddiv{
+    height: 200px;
+    /* object-fit: cover; */
+    max-width: 100%;
+}
+.thirddiv{
+    height: 200px;
+    /* object-fit: cover; */
+    max-width: 100%;
+}
+@media only screen and (max-width: 600px) {
+    .maindiv{
+        order: 2
+    }
+    .weakdiv{
+        order: 1
+    }
+    .sslideimg{
+        height: 50px;
+    }
+      .weakdiv{
+          visibility: hidden;
+          display: none;
+      }
+}

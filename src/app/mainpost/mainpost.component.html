@@ -1,0 +1,212 @@
+<app-slider></app-slider>
+<div class="container">
+  <div class="row">
+    <div class="col-md-12 col-12" style="margin: 10px 0px 10px 0px;padding: 0px">
+      <button style="border-radius: 0px" type="button" class="btn btn-danger">techwire</button>
+      <hr style="margin: 0px;border: 2px solid #d9534f">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-4 col-6 hellodiv" style="margin: 0px;padding: 0px;">
+      <div class="card" style="width: rem;">
+        <a [href]="fslide1[0].link">
+          <img [src]="fslide1[0]._embedded['wp:featuredmedia']['0'].source_url" class="card-img-top leftimg" alt="...">
+        </a>
+        <div class="card-body" style="height: 130pm;overflow: hidden;">
+          <h5 class="card-title">{{fslide1[0].title.rendered}}</h5>
+          <p style="font-size:12px " class="card-text">{{getpoorhtml(fslide1[0].excerpt.rendered) }}</p>
+        </div>
+      </div>
+      <div class="asd" style="display: none;">
+        <hr style="margin: 0px;border: 2px solid #d9534f;" class="belowtagg">
+      </div>
+    </div>
+    <div class="col-md-4 col-6 hellodiv" style="margin: 0px;padding: 0px">
+      <div class="card">
+          <a [href]="fslide1[1].link">
+        <img [src]="fslide1[1]._embedded['wp:featuredmedia']['0'].source_url" class="card-img-top leftimg" alt="...">
+            </a>
+        <div class="card-body" style="height: 130pm;overflow: hidden;">
+          <h5 class="card-title">{{fslide1[1].title.rendered}}</h5>
+          <p style="font-size:12px" class="card-text">{{getpoorhtml(fslide1[1].excerpt.rendered)}}</p>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="col-md-4 col-12 hellodiv" style="margin: 0px;padding: 0px;height: 350px;overflow: scroll;">
+
+      <ul class="list-group">
+        <li class="list-group-item" *ngFor="let a of fslide2">
+          <div style="float: left;width: 25%;">
+              <a [href]="a.link">
+            <img class="listimg" [src]="a._embedded['wp:featuredmedia']['0'].source_url" alt="">
+            </a>
+          </div>
+          <div style="width: 65%;float: left;overflow: hidden;height:100px;margin: 0px 0px 0px 20px;">
+            <p>{{getpoorhtml(a.excerpt.rendered)}}}</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+    <div class="row">
+      <div class="col-md-12 col-12" style="margin: 10px 0px 10px 0px;padding: 0px">
+        <button style="border-radius: 0px" type="button" class="btn btn-danger">readhub</button>
+        <hr style="margin: 0px;border: 2px solid #d9534f">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-4 col-6 hellodiv" style="margin: 0px;padding: 0px;">
+        <div class="card" style="width: rem;">
+          <a [href]="sslide1[0].link">
+            <img [src]="sslide1[0]._embedded['wp:featuredmedia']['0'].source_url" class="card-img-top leftimg" alt="...">
+          </a>
+          <div class="card-body" style="height: 130pm;overflow: hidden;">
+            <h5 class="card-title">{{sslide1[0].title.rendered}}</h5>
+            <p style="font-size:12px " class="card-text">{{getpoorhtml(sslide1[0].excerpt.rendered) }}</p>
+          </div>
+        </div>
+        <div class="asd" style="display: none;">
+          <hr style="margin: 0px;border: 2px solid #d9534f;" class="belowtagg">
+        </div>
+      </div>
+      <div class="col-md-4 col-6 hellodiv" style="margin: 0px;padding: 0px">
+        <div class="card">
+            <a [href]="sslide1[1].link">
+          <img [src]="sslide1[1]._embedded['wp:featuredmedia']['0'].source_url" class="card-img-top leftimg" alt="...">
+              </a>
+          <div class="card-body" style="height: 130pm;overflow: hidden;">
+            <h5 class="card-title">{{sslide1[1].title.rendered}}</h5>
+            <p style="font-size:12px" class="card-text">{{getpoorhtml(sslide1[1].excerpt.rendered)}}</p>
+          </div>
+        </div>
+  
+      </div>
+  
+      <div class="col-md-4 col-12 hellodiv" style="margin: 0px;padding: 0px;height: 350px;overflow: scroll;">
+  
+        <ul class="list-group">
+          <li class="list-group-item" *ngFor="let a of sslide2">
+            <div style="float: left;width: 25%;">
+                <a [href]="a.link">
+              <img class="listimg" [src]="a._embedded['wp:featuredmedia']['0'].source_url" alt="">
+              </a>
+            </div>
+            <div style="width: 65%;float: left;overflow: hidden;height:100px;margin: 0px 0px 0px 20px;">
+              <p>{{getpoorhtml(a.excerpt.rendered)}}}</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+      <div class="row">
+        <div class="col-md-12 col-12" style="margin: 10px 0px 10px 0px;padding: 0px">
+          <button style="border-radius: 0px" type="button" class="btn btn-danger">power</button>
+          <hr style="margin: 0px;border: 2px solid #d9534f">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4 col-6 hellodiv" style="margin: 0px;padding: 0px;">
+          <div class="card" style="width: rem;">
+            <a [href]="foslide1[0].link">
+              <img [src]="foslide1[0]._embedded['wp:featuredmedia']['0'].source_url" class="card-img-top leftimg" alt="...">
+            </a>
+            <div class="card-body" style="height: 130pm;overflow: hidden;">
+              <h5 class="card-title">{{foslide1[0].title.rendered}}</h5>
+              <p style="font-size:12px " class="card-text">{{getpoorhtml(foslide1[0].excerpt.rendered) }}</p>
+            </div>
+          </div>
+          <div class="asd" style="display: none;">
+            <hr style="margin: 0px;border: 2px solid #d9534f;" class="belowtagg">
+          </div>
+        </div>
+        <div class="col-md-4 col-6 hellodiv" style="margin: 0px;padding: 0px">
+          <div class="card">
+              <a [href]="foslide1[1].link">
+            <img [src]="foslide1[1]._embedded['wp:featuredmedia']['0'].source_url" class="card-img-top leftimg" alt="...">
+                </a>
+            <div class="card-body" style="height: 130pm;overflow: hidden;">
+              <h5 class="card-title">{{foslide1[1].title.rendered}}</h5>
+              <p style="font-size:12px" class="card-text">{{getpoorhtml(foslide1[1].excerpt.rendered)}}</p>
+            </div>
+          </div>
+    
+        </div>
+    
+        <div class="col-md-4 col-12 hellodiv" style="margin: 0px;padding: 0px;height: 350px;overflow: scroll;">
+    
+          <ul class="list-group">
+            <li class="list-group-item" *ngFor="let a of foslide2">
+              <div style="float: left;width: 25%;">
+                  <a [href]="a.link">
+                <img class="listimg" [src]="a._embedded['wp:featuredmedia']['0'].source_url" alt="">
+                </a>
+              </div>
+              <div style="width: 65%;float: left;overflow: hidden;height:100px;margin: 0px 0px 0px 20px;">
+                <p>{{getpoorhtml(a.excerpt.rendered)}}}</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+          <div class="col-md-12 col-12" style="margin: 10px 0px 10px 0px;padding: 0px">
+            <button style="border-radius: 0px" type="button" class="btn btn-danger">techguru</button>
+            <hr style="margin: 0px;border: 2px solid #d9534f">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4 col-6 hellodiv" style="margin: 0px;padding: 0px;">
+            <div class="card" style="width: rem;">
+              <a [href]="tslide1[0].link">
+                <img [src]="tslide1[0]._embedded['wp:featuredmedia']['0'].source_url" class="card-img-top leftimg" alt="...">
+              </a>
+              <div class="card-body" style="height: 130pm;overflow: hidden;">
+                <h5 class="card-title">{{tslide1[0].title.rendered}}</h5>
+                <p style="font-size:12px " class="card-text">{{getpoorhtml(tslide1[0].excerpt.rendered) }}</p>
+              </div>
+            </div>
+            <div class="asd" style="display: none;">
+              <hr style="margin: 0px;border: 2px solid #d9534f;" class="belowtagg">
+            </div>
+          </div>
+          <div class="col-md-4 col-6 hellodiv" style="margin: 0px;padding: 0px">
+            <div class="card">
+                <a [href]="tslide1[1].link">
+              <img [src]="tslide1[1]._embedded['wp:featuredmedia']['0'].source_url" class="card-img-top leftimg" alt="...">
+                  </a>
+              <div class="card-body" style="height: 130pm;overflow: hidden;">
+                <h5 class="card-title">{{tslide1[1].title.rendered}}</h5>
+                <p style="font-size:12px" class="card-text">{{getpoorhtml(tslide1[1].excerpt.rendered)}}</p>
+              </div>
+            </div>
+      
+          </div>
+      
+          <div class="col-md-4 col-12 hellodiv" style="margin: 0px;padding: 0px;height: 350px;overflow: scroll;">
+      
+            <ul class="list-group">
+              <li class="list-group-item" *ngFor="let a of tslide2">
+                <div style="float: left;width: 25%;">
+                    <a [href]="a.link">
+                  <img class="listimg" [src]="a._embedded['wp:featuredmedia']['0'].source_url" alt="">
+                  </a>
+                </div>
+                <div style="width: 65%;float: left;overflow: hidden;height:100px;margin: 0px 0px 0px 20px;">
+                  <p>{{getpoorhtml(a.excerpt.rendered)}}}</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
